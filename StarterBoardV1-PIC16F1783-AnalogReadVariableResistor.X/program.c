@@ -37,15 +37,16 @@ void programInitialize(void) {
     ANSELBbits.ANSB2 = 0;
     ANSELBbits.ANSB1 = 0;
     
-    TRISAbits.TRISA0 = 1;
-    ANSELAbits.ANSA0 = 1;
-    
     RS_Pin = 0;
     E_Pin = 0;
     D4_Pin = 0;
     D5_Pin = 0;
     D6_Pin = 0;
     D7_Pin = 0;
+    
+	// Pin for analog read
+    TRISAbits.TRISA0 = 1;
+    ANSELAbits.ANSA0 = 1;
     
     lcd_Initialize();
     var_Initialize();
